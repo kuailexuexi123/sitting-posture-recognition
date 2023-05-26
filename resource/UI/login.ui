@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TTTEED</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-15</number>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="2,3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="login_top_bg_label">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="login_bottom" native="true">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="toolTipDuration">
+      <number>-15</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,6">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>注册账号</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item row="0" column="0" colspan="2">
+          <widget class="QComboBox" name="account_cb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid gray;
+	background-color: transparent;
+}
+QComboBox::drop-down {
+	background-color: transparent;
+	width: 60px;height: 40px;
+}
+QComboBox::down-arrow {
+	image: url(:/login/images/down.png);
+	width: 40px;height: 10px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView: item {
+	color: lightblue;
+}
+QComboBox: hover{
+	border-bottom: 1px solid black;
+}
+QComboBox: focus 
+{
+ 	border-bottom: 1px solid rgb(18,183,245);
+}</string>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QPushButton" name="login_btn">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-color: rgb(33,174,250);
+	border-radius: 5px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72,203,250);
+}
+QPushButton:pressed {
+	background-color: rgb(85,85,255);
+}
+QPushButton:disabled {
+	background-color: rgb(148, 146, 149);
+}</string>
+           </property>
+           <property name="text">
+            <string>安全登录</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../source.qrc">
+             <normaloff>:/login/images/safe.png</normaloff>:/login/images/safe.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLineEdit" name="pwd_le">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid gray;
+	background-color: transparent;
+}
+QLineEdit: hover{
+	border-bottom: 1px solid black;
+}
+QLineEdit: focus 
+{
+ 	border-bottom: 1px solid rgb(18,183,245);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../source.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>show_register_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-25</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pwd_le</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_login_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>291</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>553</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>account_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_login_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>508</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>login_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>check_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_register_pane()</slot>
+  <slot>open_link()</slot>
+  <slot>enable_login_btn()</slot>
+  <slot>check_login()</slot>
+  <slot>auto_login()</slot>
+  <slot>remember_pwd()</slot>
+ </slots>
+</ui>

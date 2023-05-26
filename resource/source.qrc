@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="register"/>
+  <qresource>
+    <file>images/bg_86_mini.png</file>
+  </qresource>
+  <qresource prefix="login">
+    <file>images/universe.gif</file>
+    <file>images/down.png</file>
+    <file>images/QR.png</file>
+    <file>images/safe.png</file>
+    <file>images/001.png</file>
+    <file>images/002.png</file>
+  </qresource>
+</RCC>
